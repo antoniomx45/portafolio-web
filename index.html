@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tony Dev</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav>
+      <span class="logo">Tony Dev</span>
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+  </header>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="menu-movil" id="menuMovil">
+    <a href="#hero" onclick="cerrarMenu()">Inicio</a>
+    <a href="#sobre-mi" onclick="cerrarMenu()">Sobre mí</a>
+    <a href="#proyectos" onclick="cerrarMenu()">Proyectos</a>
+    <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <p class="hero-saludo">Hola, soy</p>
+      <h1>Tony<span class="accent"> Dev</span></h1>
+      <p class="hero-rol">Desarrollador web · Frontend · Backend</p>
+      <p class="hero-desc">Construyo interfaces y experiencias digitales con código limpio y diseño funcional.</p>
+      <div class="hero-btns">
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-outline">Contacto</a>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <p>Soy Tony, desarrollador web apasionado por crear productos digitales que combinan buen diseño con código sólido. Me especializo en el desarrollo frontend y backend, siempre buscando soluciones limpias y eficientes.</p>
+          <p>Cuando no estoy programando, estoy aprendiendo algo nuevo o explorando ideas creativas en internet.</p>
+        </div>
+        <div class="stack">
+          <p class="stack-titulo">// stack</p>
+          <div class="stack-grid">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="proyectos-grid">
+
+        <div class="proyecto-card">
+          <div class="proyecto-header">
+            <span class="proyecto-num">01</span>
+            <div class="proyecto-links">
+              <a href="#" target="_blank">Demo →</a>
+              <a href="#" target="_blank">GitHub →</a>
+            </div>
+          </div>
+          <h3>Nombre del proyecto</h3>
+          <p>Descripción breve de qué hace el proyecto y qué tecnologías usaste para construirlo.</p>
+          <div class="proyecto-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-header">
+            <span class="proyecto-num">02</span>
+            <div class="proyecto-links">
+              <a href="#" target="_blank">Demo →</a>
+              <a href="#" target="_blank">GitHub →</a>
+            </div>
+          </div>
+          <h3>Nombre del proyecto</h3>
+          <p>Descripción breve de qué hace el proyecto y qué tecnologías usaste para construirlo.</p>
+          <div class="proyecto-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-header">
+            <span class="proyecto-num">03</span>
+            <div class="proyecto-links">
+              <a href="#" target="_blank">Demo →</a>
+              <a href="#" target="_blank">GitHub →</a>
+            </div>
+          </div>
+          <h3>Nombre del proyecto</h3>
+          <p>Descripción breve de qué hace el proyecto y qué tecnologías usaste para construirlo.</p>
+          <div class="proyecto-tags">
+            <span>React</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p class="contacto-intro">¿Quieres colaborar o simplemente saludar? Encuéntrame en:</p>
+
+      <div class="contacto-grid">
+
+        <a href="https://www.instagram.com/tony.exe404notfound?igsh=bXY0ZzF0MzF4dWli" target="_blank" rel="noopener noreferrer" class="contacto-card">
+          <span class="contacto-icon">📸</span>
+          <div>
+            <p class="contacto-nombre">Instagram</p>
+            <p class="contacto-usuario">@tony.exe404notfound</p>
+          </div>
+          <span class="contacto-arrow">→</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@tony.exe404notfound?_r=1&_t=ZS-96MgQeDkelk" target="_blank" rel="noopener noreferrer" class="contacto-card">
+          <span class="contacto-icon">🎵</span>
+          <div>
+            <p class="contacto-nombre">TikTok</p>
+            <p class="contacto-usuario">@tony.exe404notfound</p>
+          </div>
+          <span class="contacto-arrow">→</span>
+        </a>
+
+        <a href="https://www.facebook.com/share/17xraXXEEw/" target="_blank" rel="noopener noreferrer" class="contacto-card">
+          <span class="contacto-icon">💬</span>
+          <div>
+            <p class="contacto-nombre">Facebook</p>
+            <p class="contacto-usuario">tony.exe404notfound</p>
+          </div>
+          <span class="contacto-arrow">→</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Hecho por <span class="accent">Tony Dev</span> · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

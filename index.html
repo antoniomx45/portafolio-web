@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tony Dev — Desarrollador Web</title>
+
+  <!-- ── Open Graph / Meta tags ── -->
+  <meta name="description" content="Tony Dev — Desarrollador web Frontend & Backend. Construyo interfaces y experiencias digitales con código limpio y diseño funcional." />
+  <meta property="og:title" content="Tony Dev — Desarrollador Web" />
+  <meta property="og:description" content="Portafolio de Tony Dev. Desarrollador web especializado en Frontend y Backend." />
+  <meta property="og:image" content="/favicon-192x192.png" />
+  <meta property="og:url" content="https://tony-dev-tt.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tony Dev — Desarrollador Web" />
+  <meta name="twitter:description" content="Portafolio de Tony Dev. Desarrollador web especializado en Frontend y Backend." />
+  <meta name="twitter:image" content="/favicon-192x192.png" />
+
+  <!-- ── Favicons ── -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <!-- ── Fuente ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav>
+      <span class="logo">Tony Dev</span>
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+  </header>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="menu-movil" id="menuMovil">
+    <a href="#hero" onclick="cerrarMenu()">Inicio</a>
+    <a href="#sobre-mi" onclick="cerrarMenu()">Sobre mí</a>
+    <a href="#proyectos" onclick="cerrarMenu()">Proyectos</a>
+    <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <p class="hero-saludo">Hola, soy</p>
+      <h1>Tony<span class="accent"> Dev</span></h1>
+      <p class="hero-rol">Desarrollador web · Frontend · Backend</p>
+      <p class="hero-desc">Construyo interfaces y experiencias digitales con código limpio y diseño funcional.</p>
+
+      <!-- CONTADORES -->
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span><span class="accent">+</span>
+          <p>Años de experiencia</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span><span class="accent">+</span>
+          <p>Proyectos realizados</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="6">0</span><span class="accent">+</span>
+          <p>Tecnologías dominadas</p>
+        </div>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-outline">Contacto</a>
+        <a href="/CV_Tony_Dev.pdf" download class="btn btn-outline">⬇ Descargar CV</a>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <p>Soy Tony, desarrollador web apasionado por crear productos digitales que combinan buen diseño con código sólido. Me especializo en el desarrollo frontend y backend, siempre buscando soluciones limpias y eficientes.</p>
+          <p>Cuando no estoy programando, estoy aprendiendo algo nuevo o explorando ideas creativas en internet.</p>
+        </div>
+        <div class="stack">
+          <p class="stack-titulo">// stack</p>
+          <div class="stack-grid">
+            <span class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+              HTML
+            </span>
+            <span class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+              CSS
+            </span>
+            <span class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+              JavaScript
+            </span>
+            <span class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+              React
+            </span>
+            <span class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+              Node.js
+            </span>
+            <span class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+              Git
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="proyectos-grid">
+
+        <div class="proyecto-card">
+          <div class="proyecto-header">
+            <span class="proyecto-num">01</span>
+            <div class="proyecto-links">
+              <a href="https://autentica-nine.vercel.app/" target="_blank">Demo →</a>
+              <a href="https://github.com/antoniomx45/autentica.git" target="_blank">GitHub →</a>
+            </div>
+          </div>
+          <h3>Landing Page Responsive para Taquería</h3>
+          <p>Página web moderna para taquería desarrollada con HTML, CSS y JavaScript. Diseño responsive adaptado para dispositivos móviles, enfocada en mostrar menú, ubicación y contacto de manera atractiva y funcional.</p>
+          <div class="proyecto-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-header">
+            <span class="proyecto-num">02</span>
+            <div class="proyecto-links">
+              <a href="https://el-caballero-barberia-de-elite.vercel.app/" target="_blank">Demo →</a>
+              <a href="https://github.com/antoniomx45/El-Caballero---Barberia-de-Elite.git" target="_blank">GitHub →</a>
+            </div>
+          </div>
+          <h3>Página Web para Barbería</h3>
+          <p>Página web moderna para barbería desarrollada con HTML, CSS y JavaScript. Diseño responsive enfocado en ofrecer una experiencia visual atractiva, mostrando servicios, horarios y contacto de manera profesional.</p>
+          <div class="proyecto-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-header">
+            <span class="proyecto-num">03</span>
+            <div class="proyecto-links">
+              <a href="#" target="_blank">Demo →</a>
+              <a href="#" target="_blank">GitHub →</a>
+            </div>
+          </div>
+          <h3>Nombre del proyecto</h3>
+          <p>Descripción breve de qué hace el proyecto y qué tecnologías usaste para construirlo.</p>
+          <div class="proyecto-tags">
+            <span>React</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p class="contacto-intro">¿Quieres colaborar o simplemente saludar? Encuéntrame en:</p>
+
+      <div class="contacto-grid">
+
+        <a href="https://www.instagram.com/tony.exe404notfound?igsh=bXY0ZzF0MzF4dWli" target="_blank" rel="noopener noreferrer" class="contacto-card">
+          <span class="contacto-icon">📸</span>
+          <div>
+            <p class="contacto-nombre">Instagram</p>
+            <p class="contacto-usuario">Tony Dev</p>
+          </div>
+          <span class="contacto-arrow">→</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@tony.exe404notfound?_r=1&_t=ZS-96MgQeDkelk" target="_blank" rel="noopener noreferrer" class="contacto-card">
+          <span class="contacto-icon">🎵</span>
+          <div>
+            <p class="contacto-nombre">TikTok</p>
+            <p class="contacto-usuario">Tony Dev</p>
+          </div>
+          <span class="contacto-arrow">→</span>
+        </a>
+
+        <a href="https://www.facebook.com/share/17xraXXEEw/" target="_blank" rel="noopener noreferrer" class="contacto-card">
+          <span class="contacto-icon">💬</span>
+          <div>
+            <p class="contacto-nombre">Facebook</p>
+            <p class="contacto-usuario">Tony Dev</p>
+          </div>
+          <span class="contacto-arrow">→</span>
+        </a>
+
+        <a href="https://github.com/antoniomx45/" target="_blank" rel="noopener noreferrer" class="contacto-card">
+          <span class="contacto-icon">👨🏾‍💻</span>
+          <div>
+            <p class="contacto-nombre">GitHub</p>
+            <p class="contacto-usuario">Tony Dev</p>
+          </div>
+          <span class="contacto-arrow">→</span>
+        </a>
+
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="form-wrapper">
+        <p class="stack-titulo">// o escríbeme directo</p>
+        <form class="contacto-form" id="contactoForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar mensaje →</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Hecho por <span class="accent">Tony Dev</span> · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // ── Contadores animados ──
+    function animarContadores() {
+      const nums = document.querySelectorAll('.stat-num');
+      nums.forEach(el => {
+        const target = +el.getAttribute('data-target');
+        const duration = 1500;
+        const step = target / (duration / 16);
+        let current = 0;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            el.textContent = target;
+            clearInterval(timer);
+          } else {
+            el.textContent = Math.floor(current);
+          }
+        }, 16);
+      });
+    }
+
+    // Disparar contadores cuando el hero sea visible
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          animarContadores();
+          heroObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    heroObserver.observe(document.getElementById('hero'));
+
+    // ── Formulario: abrir correo ──
+    document.getElementById('contactoForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const email = document.getElementById('email').value;
+      const mensaje = document.getElementById('mensaje').value;
+      const subject = encodeURIComponent(`Contacto desde portafolio — ${nombre}`);
+      const body = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\n\n${mensaje}`);
+      window.location.href = `mailto:antonio.rosales.1922@gmail.com?subject=${subject}&body=${body}`;
+      document.getElementById('formStatus').textContent = '✅ Abriendo tu cliente de correo...';
+    });
+  </script>
+
+</body>
+</html>
